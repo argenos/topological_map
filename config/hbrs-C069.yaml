@@ -1,0 +1,10 @@
+map_hierarchy:
+  - rooms
+  - locations
+  - poses
+  rooms:
+    - kitchen
+    - living room
+    - dining room
+    - guest area
+    - storage area
