@@ -62,9 +62,21 @@ class TopologicalMap(object):
 
         path = nx.dijkstra_path(self.G, req.source, req.goal)
 
-        path = ['hallway', 'bedroom', 'kitchen', 'dishwasher']
+        directions = list()
+        start = path.pop(0)
+        while path:
+            goal = path[0]
+
+            connection = self.G.edges[start, goal]['through']
+            instruction = 'Go from the %s to the %s through the %s' % (start, goal, connection)
+            rospy.loginfo(instruction)
+            directions.append(instruction)
+
+            start = path.pop(0)
+
         reply = TopologicalPathResponse()
         reply.path = path
+        reply.directions = directions
         return reply
 
     def handle_position_request(self, req):
@@ -81,4 +93,3 @@ class TopologicalMap(object):
         position = 'hallway'
         rospy.logwarn("Failed to find room, using default location: %s" % position )
         return TopologicalPositionResponse(position)
-
