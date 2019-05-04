@@ -1,8 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import roslaunch
 import rospy
-from topological_map.topological_map import TopologicalMap
+from topological_map_ros.topological_map import TopologicalMap
 
 if __name__ == '__main__':
     rospy.init_node('topological_map_server', anonymous=True)

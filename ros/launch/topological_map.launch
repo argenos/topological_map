@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
-    <arg name="config_file" default="$(find topological_map)/config/config.yaml"/>
+    <arg name="config_file" default="$(find topological_map_ros)/config/config.yaml"/>
 
-    <node name="topological_map" pkg="topological_map" type="switch_maps" args="$(find topological_map)/config/" output="screen">
+    <node name="topological_map" pkg="topological_map_ros" type="topological_server" args="$(find topological_map_ros)/config/" output="screen">
         <rosparam command="load" file="$(arg config_file)" />
     </node>
 </launch>

@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 from __future__ import print_function
 
 import networkx as nx
@@ -8,8 +7,8 @@ import rospy
 
 import tf
 from geometry_msgs.msg import PoseWithCovarianceStamped
+from topological_map_ros.srv import TopologicalPath, TopologicalPathResponse, TopologicalPosition, TopologicalPositionResponse
 
-from topological_map.srv import TopologicalPath, TopologicalPathResponse, TopologicalPosition, TopologicalPositionResponse
 
 from topological_map_ros.script import generate_map
 
@@ -68,6 +67,4 @@ class TopologicalMap(object):
         position = 'hallway'
         rospy.loginfo("Robot is in %s" % position )
         return TopologicalPositionResponse(position)
-if __name__ == "__main__":
-    server = TopologicalMap()
-    rospy.spin()
+

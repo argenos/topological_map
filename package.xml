@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>topological_map</name>
+  <name>topological_map_ros</name>
   <version>0.0.0</version>
   <description>The topological_map package</description>
 
