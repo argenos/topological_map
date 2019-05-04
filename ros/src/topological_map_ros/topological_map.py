@@ -13,15 +13,15 @@ from topological_map_ros.srv import TopologicalPath, TopologicalPathResponse, To
 def generate_map():
     G = nx.DiGraph()
 
-    G.add_edge('hallway', 'entry', through='entrance door shown in the map', level='room')
-    G.add_edge('hallway', 'bar', through='entry', level='room')
+    G.add_edge('hallway', 'entrance', through='entrance door shown in the map', level='room')
+    G.add_edge('hallway', 'bar', through='entrance', level='room')
     G.add_edge('hallway', 'bedroom', through='door', level='room')
     G.add_edge('hallway', 'living room', through='corridor oposite the entrance door', level='room')
     G.add_edge('bedroom', 'kitchen', through='door next to the desk', level='room')
     G.add_edge('kitchen', 'living room', through='corridor between the white drawer and the blue trash can', level='room')
     G.add_edge('living room', 'exit', through='door next to the coat hanger', level='room')
 
-    G.add_edge('entry', 'hallway', through='entrance door', level='room')
+    G.add_edge('entrance', 'hallway', through='entrance door', level='room')
     G.add_edge( 'bar', 'hallway', through='corridor oposite the bar table', level='room')
     G.add_edge('bedroom', 'hallway',  through='door oposite the desk', level='room')
     G.add_edge('living room', 'hallway',  through='corridor between the tv and the bookcase', level='room')
@@ -60,7 +60,12 @@ class TopologicalMap(object):
     def handle_path_request(self, req):
         rospy.loginfo("Planning from %s to %s" % (req.source, req.goal))
 
-        path = nx.dijkstra_path(self.G, req.source, req.goal)
+        reply = TopologicalPathResponse()
+        try:
+            path = nx.dijkstra_path(self.G, req.source, req.goal)
+        except nx.NodeNotFound as e:
+            rospy.logerr('failed to find path: ' + e.message)
+            return reply
 
         directions = list()
         start = path.pop(0)
@@ -74,7 +79,6 @@ class TopologicalMap(object):
 
             start = path.pop(0)
 
-        reply = TopologicalPathResponse()
         reply.path = path
         reply.directions = directions
         return reply
