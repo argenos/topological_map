@@ -52,7 +52,7 @@ class TopologicalMap(object):
 
     def add_room(self, point_list):
         # TODO use the point list loaded from the config, each point in the list needs to be changed to a tuple like below
-        point_list = [(-0.9909883, -4.218833), (-1.92709, 0.9022037), (-7.009388, -1.916794), (-4.107592, -7.078834)]
+        #point_list = [(-0.9909883, -4.218833), (-1.92709, 0.9022037), (-7.009388, -1.916794), (-4.107592, -7.078834)]
         p1, p2, p3, p4 = map(Point, point_list)
         room = Polygon(p1,p2,p3,p4)
         return room
@@ -75,10 +75,13 @@ class TopologicalMap(object):
         y = -3.7
 
         robot_pose = Point(x, y) # Inspection test pose
-        #for room in self.rooms:
-        self.rooms['living_room'].encloses_point(robot_pose)
+        for room in self.rooms:
+            if not self.rooms[room].encloses_point(robot_pose):
+                continue
+            rospy.loginfo('robot is in room: ' + room)
+            return TopologicalPositionResponse(room)
 
         position = 'hallway'
-        rospy.loginfo("Robot is in %s" % position )
+        rospy.logwarn("Failed to find room, using default location: %s" % position )
         return TopologicalPositionResponse(position)
 
