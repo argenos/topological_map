@@ -73,7 +73,20 @@ class TopologicalMap(object):
             goal = path[0]
 
             connection = self.G.edges[start, goal]['through']
-            instruction = 'Go from the %s to the %s through the %s' % (start, goal, connection)
+            if start == 'hallway':
+                if goal == 'living room':
+                    orientation = None
+                elif goal == 'bedroom':
+                    orientation = 'right'
+                elif goal == 'bar':
+                    orientation = 'left'
+
+                if orientation is not None:
+                    instruction = 'Facing the entrance door, go to the %s through the %s' % (goal, orientation)
+                else:
+                    instruction = 'Go from the %s to the %s through the %s' % (start, goal, connection)
+            else:
+                instruction = 'Go from the %s to the %s through the %s' % (start, goal, connection)
             rospy.loginfo(instruction)
             directions.append(instruction)
 
