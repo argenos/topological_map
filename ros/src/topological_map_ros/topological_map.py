@@ -74,7 +74,7 @@ class TopologicalMap(object):
 
             connection = self.G.edges[start, goal]['through']
             if start == 'hallway':
-                if goal == 'living_room':
+                if goal == 'living_room' or goal == 'entrance':
                     orientation = None
                 elif goal == 'bedroom':
                     orientation = 'right'
