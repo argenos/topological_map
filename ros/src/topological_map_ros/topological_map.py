@@ -82,7 +82,7 @@ class TopologicalMap(object):
                     orientation = 'left'
 
                 if orientation is not None:
-                    instruction = 'Facing the entrance door, go to the %s through the %s' % (goal, orientation)
+                    instruction = 'Facing the entrance door, go to the %s through the %s %s' % (goal, orientation, connection)
                 else:
                     instruction = 'Go from the %s to the %s through the %s' % (start, goal, connection)
             else:
