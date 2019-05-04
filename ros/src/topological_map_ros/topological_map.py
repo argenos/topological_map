@@ -16,18 +16,18 @@ def generate_map():
     G.add_edge('hallway', 'entrance', through='entrance door shown in the map', level='room')
     G.add_edge('hallway', 'bar', through='entrance', level='room')
     G.add_edge('hallway', 'bedroom', through='door', level='room')
-    G.add_edge('hallway', 'living room', through='corridor oposite the entrance door', level='room')
+    G.add_edge('hallway', 'living_room', through='corridor oposite the entrance door', level='room')
     G.add_edge('bedroom', 'kitchen', through='door next to the desk', level='room')
-    G.add_edge('kitchen', 'living room', through='corridor between the white drawer and the blue trash can', level='room')
-    G.add_edge('living room', 'exit', through='door next to the coat hanger', level='room')
+    G.add_edge('kitchen', 'living_room', through='corridor between the white drawer and the blue trash can', level='room')
+    G.add_edge('living_room', 'exit', through='door next to the coat hanger', level='room')
 
     G.add_edge('entrance', 'hallway', through='entrance door', level='room')
     G.add_edge( 'bar', 'hallway', through='corridor oposite the bar table', level='room')
     G.add_edge('bedroom', 'hallway',  through='door oposite the desk', level='room')
-    G.add_edge('living room', 'hallway',  through='corridor between the tv and the bookcase', level='room')
+    G.add_edge('living_room', 'hallway',  through='corridor between the tv and the bookcase', level='room')
     G.add_edge('kitchen', 'bedroom',  through='door between the cupboard and the blue trash can', level='room')
-    G.add_edge('living room', 'kitchen',  through='corridor between the bookcase and the high table', level='room')
-    G.add_edge('exit', 'living room',  through='exit door shown in the map', level='room')
+    G.add_edge('living_room', 'kitchen',  through='corridor between the bookcase and the high table', level='room')
+    G.add_edge('exit', 'living_room',  through='exit door shown in the map', level='room')
 
     # return G.to_directed()
     return G
@@ -74,7 +74,7 @@ class TopologicalMap(object):
 
             connection = self.G.edges[start, goal]['through']
             if start == 'hallway':
-                if goal == 'living room':
+                if goal == 'living_room':
                     orientation = None
                 elif goal == 'bedroom':
                     orientation = 'right'
