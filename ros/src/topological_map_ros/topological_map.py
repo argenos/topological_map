@@ -68,12 +68,9 @@ class TopologicalMap(object):
         return reply
 
     def handle_position_request(self, req):
-        rospy.loginfo("Received request for topological pose")
-
-        # TODO get this from the request
-        x = -1.5
-        y = -3.7
-
+        x, y = req.current_pose.pose.position.x, req.current_pose.pose.position.y
+        rospy.loginfo("Received request for topological pose: x={0:.3f}, y={1:.3f} (frame: {2})"
+                      .format(x, y, req.current_pose.header.frame_id))
         robot_pose = Point(x, y) # Inspection test pose
         for room in self.rooms:
             if not self.rooms[room].encloses_point(robot_pose):
