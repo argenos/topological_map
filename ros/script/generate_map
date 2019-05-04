@@ -4,6 +4,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import json
 import yaml
+from topological_map_ros.topological_map import generate_map
+
 
 def draw(graph):
     pos = nx.spring_layout(graph, iterations=1000, scale=100.0)
@@ -15,6 +17,7 @@ def draw(graph):
     # plt.savefig("topological-map.png")
     plt.show()
 
+
 def export(graph):
     data = nx.node_link_data(graph)
     with open("../../config/topological-map.json", 'w') as f:
@@ -23,27 +26,6 @@ def export(graph):
     return data
 
 
-def generate_map():
-    G = nx.DiGraph()
-
-    G.add_edge('hallway', 'entry', through='entrance door shown in the map', level='room')
-    G.add_edge('hallway', 'bar', through='entry', level='room')
-    G.add_edge('hallway', 'bedroom', through='door', level='room')
-    G.add_edge('hallway', 'living room', through='corridor oposite the entrance door', level='room')
-    G.add_edge('bedroom', 'kitchen', through='door next to the desk', level='room')
-    G.add_edge('kitchen', 'living room', through='corridor between the white drawer and the blue trash can', level='room')
-    G.add_edge('living room', 'exit', through='door next to the coat hanger', level='room')
-
-    G.add_edge('entry', 'hallway', through='entrance door', level='room')
-    G.add_edge( 'bar', 'hallway', through='corridor oposite the bar table', level='room')
-    G.add_edge('bedroom', 'hallway',  through='door oposite the desk', level='room')
-    G.add_edge('living room', 'hallway',  through='corridor between the tv and the bookcase', level='room')
-    G.add_edge('kitchen', 'bedroom',  through='door between the cupboard and the blue trash can', level='room')
-    G.add_edge('living room', 'kitchen',  through='corridor between the bookcase and the high table', level='room')
-    G.add_edge('exit', 'living room',  through='exit door shown in the map', level='room')
-
-    # return G.to_directed()
-    return G
 
 if __name__ == '__main__':
     topo_map = generate_map()
