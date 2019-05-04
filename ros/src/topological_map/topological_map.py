@@ -11,6 +11,8 @@ from geometry_msgs.msg import PoseWithCovarianceStamped
 
 from topological_map.srv import TopologicalPath, TopologicalPathResponse, TopologicalPosition, TopologicalPositionResponse
 
+from topological_map_ros.script import generate_map
+
 class TopologicalMap(object):
     def __init__(self):
 
@@ -25,7 +27,7 @@ class TopologicalMap(object):
         for room, points in self.rooms_config.items():
             self.rooms[room] = add_room(points)
 
-        self.G = nx.Graph()
+        self.G = generate_map()
 
 
         rospy.init_node('topological_map_server')
