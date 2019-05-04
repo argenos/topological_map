@@ -1,0 +1,57 @@
+#!/usr/bin/python
+
+import networkx as nx
+import matplotlib.pyplot as plt
+import json
+import yaml
+
+def draw(graph):
+    pos = nx.spring_layout(graph, iterations=1000, scale=100.0)
+
+    nx.draw(graph, pos, font_size=11, node_size=500,
+            with_labels=True,
+            node_color='c')
+
+    # plt.savefig("topological-map.png")
+    plt.show()
+
+def export(graph):
+    data = nx.node_link_data(graph)
+    with open("../../config/topological-map.json", 'w') as f:
+        json.dump(data, f, indent=2)
+
+    return data
+
+
+if __name__ == '__main__':
+    G = nx.Graph()
+
+    G.add_edge('hallway', 'entry', through='door', level='room')
+    G.add_edge('hallway', 'bar', through='entry', level='room')
+    G.add_edge('hallway', 'bedroom', through='door', level='room')
+    G.add_edge('hallway', 'living room', through='entry', level='room')
+    G.add_edge('bedroom', 'kitchen', through='door', level='room')
+    G.add_edge('kitchen', 'living room', through='entry', level='room')
+    G.add_edge('living room', 'exit', through='door', level='room')
+
+    # topo_map = G.to_directed()
+    topo_map = G
+
+    draw(topo_map)
+    export(topo_map)
+
+    path = nx.dijkstra_path(topo_map, 'entry', 'kitchen')
+    print(path)
+
+
+    for n in topo_map.edges(data=True):
+        print(n)
+
+    start = path.pop(0)
+    while path:
+        goal = path[0]
+
+        connection = topo_map.edges[start, goal]['through']
+        print('Go from the %s to the %s through the %s' % (start, goal, connection))
+
+        start = path.pop(0)

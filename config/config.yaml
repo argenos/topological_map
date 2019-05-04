@@ -1,0 +1,26 @@
+rooms:
+  hallway:
+    - corner_1
+    - corner_2
+    - corner_3
+    - corner_4
+  bar:
+    - corner_1
+    - corner_2
+    - corner_3
+    - corner_4
+  living_room:
+    - corner_1
+    - corner_2
+    - corner_3
+    - corner_4
+  bedroom:
+    - corner_1
+    - corner_2
+    - corner_3
+    - corner_4
+  kitchen:
+    - corner_1
+    - corner_2
+    - corner_3
+    - corner_4
