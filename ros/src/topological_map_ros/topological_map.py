@@ -29,15 +29,16 @@ def generate_map():
     G.add_edge('living_room', 'kitchen',  through='corridor between the bookcase and the high table', level='room')
     G.add_edge('exit', 'living_room',  through='exit door shown in the map', level='room')
 
-    # return G.to_directed()
     return G
 
 
 class TopologicalMap(object):
     def __init__(self):
 
-        self.server = rospy.Service('topological_path_plan', TopologicalPath, self.handle_path_request)
+        self.path_server = rospy.Service('topological_path_plan', TopologicalPath, self.handle_path_request)
         self.position_server = rospy.Service('topological_position', TopologicalPosition, self.handle_position_request)
+        self.node_info_server = rospy.Service('topological_node_info', Area, self.handle_node_info_request)
+        self.map_server = rospy.Service('~topological_map_info', TopoMap, self.handle_map_info_request)
 
         self.rooms_config = rospy.get_param('~rooms', dict())
 
@@ -110,3 +111,44 @@ class TopologicalMap(object):
         position = 'hallway'
         rospy.logwarn("Failed to find room, using default location: %s" % position )
         return TopologicalPositionResponse(position)
+
+    def handle_map_info_request(self, req):
+        pass
+
+    def handle_node_info_request(self, req):
+        pass
+
+    def add_L1_area(self):
+        '''
+        Rooms
+
+        :return:
+        '''
+        pass
+
+    def add_L2_area(self):
+        '''
+        Locations
+
+        :return:
+        '''
+        pass
+
+    def add_L3_area(self):
+        '''
+        Poses
+
+        :return:
+        '''
+        pass
+
+    def add_area(self, name, level):
+        """
+        Adding L1, L2, or L3 areas
+
+        :param level:
+        :return:
+        """
+
+    def add_path(self):
+        pass
