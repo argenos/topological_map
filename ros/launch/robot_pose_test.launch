@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
-    <arg name="base_pose_topic" default="/hsrb/base_pose"/>
+    <arg name="base_pose_topic" default="~base_pose"/>
     <arg name="topo_position_service" default="topological_position"/>
 
-    <node name="where_am_i" pkg="topological_map_ros" type="where_am_i" output="screen">
+    <node name="robot_pose_test" pkg="topological_map_ros" type="robot_pose_test" output="screen">
         <param name="base_pose_topic" type="string" value="$(arg base_pose_topic)" />
         <param name="topo_position_service" type="string" value="$(arg topo_position_service)" />
     </node>
 
-    <include file="$(find topological_map_ros)/ros/launch/topological_map.launch"/>
 </launch>

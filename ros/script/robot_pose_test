@@ -5,7 +5,7 @@ from geometry_msgs.msg import PoseStamped
 from topological_map_ros.srv import TopologicalPosition, TopologicalPositionResponse
 
 
-class WhereAmI(object):
+class RobotPoseTest(object):
     def __init__(self, base_pose_topic, topo_service_name, timeout=5.0):
         self._base_pose_topic = base_pose_topic
         self._timeout = timeout
@@ -13,12 +13,11 @@ class WhereAmI(object):
         try:
             rospy.wait_for_service(topo_service_name, timeout=self._timeout)
             self._position_client = rospy.ServiceProxy(topo_service_name, TopologicalPosition)
-            #resp1 = position_client(current_pose)
         except rospy.ServiceException as e:
-            rospy.logerr('failed creating service proxy for service "{}: {}"'.format(topo_service_name, e.message))
+            rospy.logerr('Failed creating service proxy for service "{}: {}"'.format(topo_service_name, e.message))
             raise
         except rospy.ROSException as e:
-            rospy.logerr('failed waiting for service "{}": {}'.format(topo_service_name, e.message))
+            rospy.logerr('Failed waiting for service "{}": {}'.format(topo_service_name, e.message))
             raise
 
         self._event_sub = rospy.Subscriber('~event_in', StringMsg, self._event_in_cb)
@@ -27,7 +26,7 @@ class WhereAmI(object):
         try:
             current_pose = rospy.wait_for_message(self._base_pose_topic, PoseStamped, timeout=self._timeout)
         except rospy.ROSException as e:
-            rospy.logerr('failed to wait for PoseStamped message on topic: ' + self._base_pose_topic)
+            rospy.logerr('Failed to wait for PoseStamped message on topic: ' + self._base_pose_topic)
             return
 
         result = self._position_client(current_pose)
@@ -35,9 +34,8 @@ class WhereAmI(object):
 
 
 if __name__ == '__main__':
-    rospy.init_node('~where_am_i')
+    rospy.init_node('~robot_pose_test')
     base_pose_topic = rospy.get_param('~base_pose_topic', None)
     topo_position_serv_name = rospy.get_param('~topo_position_service', 'topological_position')
-    WhereAmI(base_pose_topic, topo_position_serv_name)
+    RobotPoseTest(base_pose_topic, topo_position_serv_name)
     rospy.spin()
-
