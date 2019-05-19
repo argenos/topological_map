@@ -23,7 +23,7 @@ add_service_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
-  std_msgs  
+  std_msgs
   geometry_msgs
 )
 
@@ -31,6 +31,8 @@ catkin_package(
 )
 
 install(PROGRAMS
+  ros/scripts/generate_map
+  ros/scripts/robot_pose_test
   ros/scripts/topological_server
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}/scripts
 )
