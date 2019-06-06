@@ -7,7 +7,7 @@ import rospy
 
 import tf
 from geometry_msgs.msg import PoseWithCovarianceStamped
-from topological_map_ros.srv import TopologicalPath, TopologicalPathResponse, TopologicalPosition, TopologicalPositionResponse
+from topological_map_ros.srv import TopologicalPath, TopologicalPathResponse, TopologicalPosition, TopologicalPositionResponse, NodeInfo, TopologicalMapInfo
 
 
 def generate_map():
@@ -37,8 +37,8 @@ class TopologicalMap(object):
 
         self.path_server = rospy.Service('topological_path_plan', TopologicalPath, self.handle_path_request)
         self.position_server = rospy.Service('topological_position', TopologicalPosition, self.handle_position_request)
-        self.node_info_server = rospy.Service('topological_node_info', Area, self.handle_node_info_request)
-        self.map_server = rospy.Service('~topological_map_info', TopoMap, self.handle_map_info_request)
+        self.node_info_server = rospy.Service('topological_node_info', NodeInfi, self.handle_node_info_request)
+        self.map_server = rospy.Service('~topological_map_info', TopologicalMapInfo, self.handle_map_info_request)
 
         self.rooms_config = rospy.get_param('~rooms', dict())
 
