@@ -1,0 +1,1137 @@
+directed: false
+graph: {}
+links:
+- connection_lane: true
+  source: 70
+  target: 96
+- max_n_obstacles: 0
+  mean: 6.1772342947043475
+  n_runs: 115
+  name: C061-2_to_C061-1
+  source: 70
+  stdev: 0.17288108592836052
+  target: 65
+  variance: 0.02988786987176917
+- max_n_obstacles: 0
+  mean: 7.312642807983333
+  n_runs: 120
+  name: C061-1_to_C063-2
+  source: 70
+  stdev: 0.1197742119215269
+  target: 21
+  variance: 0.014345861841422837
+- max_n_obstacles: 0
+  mean: 4.097496402347431
+  n_runs: 331
+  name: LC-006_to_LC-015<->LC-015_to_LC-006
+  source: 46
+  stdev: 0.40921062945754255
+  target: 44
+  variance: 0.1674533392610382
+- connection_lane: true
+  source: 46
+  target: 132
+- max_n_obstacles: 0
+  mean: 2.080497793521127
+  n_runs: 284
+  name: C013-2_to_LC-006
+  source: 46
+  stdev: 0.2180635380420458
+  target: 64
+  variance: 0.04755170662341476
+- max_n_obstacles: 0
+  mean: 4.428430836285714
+  n_runs: 21
+  name: LC-016_to_C-stairs-1
+  source: 110
+  stdev: 0.40781661294337734
+  target: 42
+  variance: 0.16631438979260846
+- max_n_obstacles: 0
+  mean: 3.5977762646818183
+  n_runs: 44
+  name: C-stairs-1_to_LC-018
+  source: 110
+  stdev: 0.3420328019736656
+  target: 161
+  variance: 0.11698643762595674
+- connection_lane: true
+  source: 94
+  target: 36
+- max_n_obstacles: 0
+  mean: 2.4652133829882907
+  n_runs: 427
+  name: LC-003_to_C016-2<->C016-2_to_LC-003
+  source: 94
+  stdev: 0.2782573280683939
+  target: 26
+  variance: 0.07742714062376181
+- max_n_obstacles: 0
+  mean: 4.425107153269503
+  n_runs: 423
+  name: C016-2_to_C014-1<->C014-1_to_C016-2
+  source: 94
+  stdev: 0.466176803578485
+  target: 37
+  variance: 0.2173208121946534
+- connection_lane: true
+  source: 14
+  target: 37
+- max_n_obstacles: 0
+  mean: 4.491923823804245
+  n_runs: 424
+  name: LC-004_to_C013-1<->C013-1_to_LC-004
+  source: 14
+  stdev: 0.5277348868821992
+  target: 36
+  variance: 0.27850411083256754
+- max_n_obstacles: 0
+  mean: 5.661489860780142
+  n_runs: 282
+  name: C013-1_to_C013-2
+  source: 14
+  stdev: 0.5572728572191759
+  target: 64
+  variance: 0.310553037393224
+- max_n_obstacles: 0
+  mean: 2.264600445725
+  n_runs: 40
+  name: LC-048_to_INT-C005
+  source: 53
+  stdev: 0.2385121787601672
+  target: 48
+  variance: 0.05688805941692195
+- max_n_obstacles: 0
+  mean: 20.287254082333334
+  n_runs: 3
+  name: INT-C005_to_INT-C009
+  source: 53
+  stdev: 5.028384260658858
+  target: 19
+  variance: 25.28464827284173
+- max_n_obstacles: 0
+  mean: 2.173221377
+  n_runs: 4
+  name: LC-047_to_INT-C005
+  source: 53
+  stdev: 0.49101124291134574
+  target: 129
+  variance: 0.24109204066534456
+- max_n_obstacles: 0
+  mean: 6.738429878698924
+  n_runs: 93
+  name: INT-C009_to_LC-050
+  source: 19
+  stdev: 1.276052321866076
+  target: 47
+  variance: 1.6283095281398037
+- max_n_obstacles: 0
+  mean: 2.5264848675851392
+  n_runs: 323
+  name: INT-C001_to_C021<->C021_to_INT-C001
+  source: 124
+  stdev: 0.4158025886604847
+  target: 62
+  variance: 0.17289179273676022
+- connection_lane: true
+  source: 124
+  target: 84
+- max_n_obstacles: 0
+  mean: 5.473516561940299
+  n_runs: 201
+  name: C021_to_C019<->C019_to_C021
+  source: 124
+  stdev: 0.5868888273081571
+  target: 139
+  variance: 0.3444384956191438
+- max_n_obstacles: 0
+  mean: 5.511479277507108
+  n_runs: 422
+  name: C014-1_to_LC-005<->LC-005_to_C014-1
+  source: 37
+  stdev: 0.5692657345529252
+  target: 76
+  variance: 0.3240634765360815
+- max_n_obstacles: 0
+  mean: 4.293509746322917
+  n_runs: 288
+  name: LC-010_to_C015
+  source: 158
+  stdev: 0.5000038593551748
+  target: 137
+  variance: 0.2500038593700694
+- max_n_obstacles: 0
+  mean: 2.3804357160793104
+  n_runs: 290
+  name: C015_to_LC-004
+  source: 158
+  stdev: 0.2371182782833161
+  target: 36
+  variance: 0.05622507789604414
+- connection_lane: true
+  source: 158
+  target: 26
+- max_n_obstacles: 0
+  mean: 2.2596114812
+  n_runs: 130
+  name: C062_to_LC-009
+  source: 28
+  stdev: 0.13563865376461745
+  target: 24
+  variance: 0.018397844395077773
+- max_n_obstacles: 0
+  mean: 3.539928857786325
+  n_runs: 117
+  name: LC-031_to_C062
+  source: 28
+  stdev: 0.10708764489663612
+  target: 119
+  variance: 0.011467763689508036
+- connection_lane: true
+  source: 28
+  target: 2
+- max_n_obstacles: 0
+  mean: 6.215554648904348
+  n_runs: 115
+  name: C058_to_C060
+  source: 96
+  stdev: 0.18060538553604777
+  target: 123
+  variance: 0.03261830528462445
+- max_n_obstacles: 0
+  mean: 7.2135694578448275
+  n_runs: 116
+  name: C060_to_LC-031
+  source: 96
+  stdev: 0.12323670300604127
+  target: 119
+  variance: 0.015187284967799222
+- connection_lane: true
+  source: 133
+  target: 137
+- max_n_obstacles: 0
+  mean: 4.145264823104839
+  n_runs: 372
+  name: C016-1_to_LC-003<->LC-003_to_C016-1
+  source: 133
+  stdev: 0.4890086884278146
+  target: 26
+  variance: 0.23912949735789144
+- max_n_obstacles: 0
+  mean: 5.574140393235457
+  n_runs: 361
+  name: LC-007_to_C016-1<->C016-1_to_LC-007
+  source: 133
+  stdev: 0.6936720574197581
+  target: 33
+  variance: 0.4811809232449602
+- connection_lane: true
+  source: 123
+  target: 65
+- max_n_obstacles: 0
+  mean: 5.341035590205128
+  n_runs: 39
+  name: LC-026_to_C058
+  source: 123
+  stdev: 0.6282286688574339
+  target: 92
+  variance: 0.3946712603743833
+- max_n_obstacles: 0
+  mean: 2.438853326875
+  n_runs: 8
+  name: C066_to_LC-047
+  source: 129
+  stdev: 0.27232386978034334
+  target: 57
+  variance: 0.07416029005214139
+- connection_lane: true
+  source: 129
+  target: 48
+- connection_lane: true
+  source: 118
+  target: 139
+- max_n_obstacles: 0
+  mean: 5.548841650196204
+  n_runs: 158
+  name: C018-1_to_C018-2<->C018-2_to_C018-1
+  source: 118
+  stdev: 0.5854279109547595
+  target: 84
+  variance: 0.34272583892485387
+- max_n_obstacles: 0
+  mean: 5.432008939950819
+  n_runs: 366
+  name: C018-2_to_LC-007<->LC-007_to_C018-2
+  source: 118
+  stdev: 0.5717235962688324
+  target: 33
+  variance: 0.3268678705305669
+- max_n_obstacles: 0
+  mean: 5.977801451823009
+  n_runs: 113
+  name: C063-1_to_C065
+  source: 49
+  stdev: 0.09903938962565528
+  target: 150
+  variance: 0.009808800697422355
+- max_n_obstacles: 0
+  mean: 3.306623994412844
+  n_runs: 109
+  name: C065_to_LC-035
+  source: 49
+  stdev: 0.10702450093531103
+  target: 112
+  variance: 0.011454243800452391
+- connection_lane: true
+  source: 49
+  target: 134
+- connection_lane: true
+  source: 150
+  target: 24
+- max_n_obstacles: 0
+  mean: 2.2472854370852713
+  n_runs: 129
+  name: LC-008_to_C063-1
+  source: 150
+  stdev: 0.14091683815383432
+  target: 2
+  variance: 0.019857555275273938
+- connection_lane: true
+  source: 21
+  target: 119
+- max_n_obstacles: 0
+  mean: 3.5703102760413223
+  n_runs: 121
+  name: C063-2_to_LC-008
+  source: 21
+  stdev: 0.128024198298086
+  target: 2
+  variance: 0.01639019534986765
+- connection_lane: true
+  source: 17
+  target: 44
+- max_n_obstacles: 0
+  mean: 4.024001160770116
+  n_runs: 348
+  name: C014-2_to_C012<->C012_to_C014-2
+  source: 17
+  stdev: 0.4960684374673402
+  target: 132
+  variance: 0.2460838946512884
+- max_n_obstacles: 0
+  mean: 5.681043853185185
+  n_runs: 81
+  name: C012_to_INT-C002<->INT-C002_to_C012
+  source: 17
+  stdev: 1.736444838303791
+  target: 51
+  variance: 3.0152406764718784
+- max_n_obstacles: 0
+  mean: 2.4380164643928572
+  n_runs: 280
+  name: C020_to_LC-002<->LC-002_to_C020
+  source: 55
+  stdev: 1.4927038535592434
+  target: 104
+  variance: 2.228164794430615
+- connection_lane: true
+  source: 55
+  target: 100
+- max_n_obstacles: 0
+  mean: 1.9520006418142075
+  n_runs: 366
+  name: LC-002_to_INT-C001<->INT-C001_to_LC-002
+  source: 55
+  stdev: 0.3259712033021038
+  target: 62
+  variance: 0.10625722538222147
+- max_n_obstacles: 0
+  mean: 6.044726732106195
+  n_runs: 113
+  name: LC-009_to_C064
+  source: 24
+  stdev: 0.10234276713304459
+  target: 134
+  variance: 0.010474041984448592
+- max_n_obstacles: 0
+  mean: 2.7574493688
+  n_runs: 10
+  name: LC-050_to_INT-C001
+  source: 62
+  stdev: 0.10878948757927383
+  target: 47
+  variance: 0.011835152607760975
+- max_n_obstacles: 0
+  mean: 2.3612838106589598
+  n_runs: 173
+  name: LC-001_to_INT-C001<->INT-C001_to_LC-001
+  source: 62
+  stdev: 0.2660578733483185
+  target: 100
+  variance: 0.07078679197062988
+- max_n_obstacles: 0
+  mean: 2.3892896823714285
+  n_runs: 280
+  name: INT-C001_to_C018-1<->C018-1_to_INT-C001
+  source: 62
+  stdev: 0.2831430177155192
+  target: 84
+  variance: 0.08016996848105082
+- max_n_obstacles: 0
+  mean: 9.52512762290909
+  n_runs: 44
+  name: INT-C002_to_LC-016
+  source: 51
+  stdev: 0.31178770102825915
+  target: 42
+  variance: 0.0972115705124871
+- max_n_obstacles: 0
+  mean: 5.675601412864197
+  n_runs: 81
+  name: LC-015_to_INT-C002<->INT-C002_to_LC-015
+  source: 51
+  stdev: 1.7441241764218238
+  target: 44
+  variance: 3.0419691427791054
+- max_n_obstacles: 0
+  mean: 7.781632743967742
+  n_runs: 31
+  name: LC-018_to_LC-020
+  source: 161
+  stdev: 1.0766713657113085
+  target: 13
+  variance: 1.1592212297426543
+- connection_lane: true
+  source: 135
+  target: 57
+- max_n_obstacles: 0
+  mean: 3.3866912056578946
+  n_runs: 38
+  name: LC-046_to_LC-048
+  source: 135
+  stdev: 0.323908962790231
+  target: 48
+  variance: 0.10491701617584326
+- max_n_obstacles: 0
+  mean: 4.126319380235294
+  n_runs: 34
+  name: INT-C004_to_LC-046
+  source: 135
+  stdev: 3.271350951017127
+  target: 109
+  variance: 10.70173704472066
+- max_n_obstacles: 0
+  mean: 5.359942385709678
+  n_runs: 279
+  name: C017_to_LC-010
+  source: 40
+  stdev: 0.5664810865048046
+  target: 137
+  variance: 0.32090082136766385
+- max_n_obstacles: 0
+  mean: 5.596906343417022
+  n_runs: 235
+  name: C019_to_C017
+  source: 40
+  stdev: 0.5561722133384186
+  target: 139
+  variance: 0.3093275308897554
+- connection_lane: true
+  source: 40
+  target: 33
+- connection_lane: true
+  source: 76
+  target: 64
+- max_n_obstacles: 0
+  mean: 2.2363100956870414
+  n_runs: 409
+  name: LC-005_to_C014-2<->C014-2_to_LC-005
+  source: 76
+  stdev: 0.24629090863958936
+  target: 132
+  variance: 0.06065921167851455
+- max_n_obstacles: 0
+  mean: 5.68808728954717
+  n_runs: 53
+  name: LC-020_to_C-stairs-2
+  source: 13
+  stdev: 0.22010748330613036
+  target: 74
+  variance: 0.04844730420735845
+- max_n_obstacles: 0
+  mean: 9.896399281
+  n_runs: 4
+  name: INT-C003_to_LC-026
+  source: 92
+  stdev: 0.15373498199274235
+  target: 152
+  variance: 0.023634444688308817
+- connection_lane: true
+  source: 92
+  target: 58
+- max_n_obstacles: 0
+  mean: 5.544474218755102
+  n_runs: 49
+  name: C059_to_C061-2
+  source: 65
+  stdev: 0.6628065495168918
+  target: 58
+  variance: 0.4393125220824879
+- max_n_obstacles: 0
+  mean: 9.372672235529413
+  n_runs: 17
+  name: INT-C003_to_C059
+  source: 58
+  stdev: 0.28122740322630285
+  target: 152
+  variance: 0.07908885232540953
+- max_n_obstacles: 0
+  mean: 3.783067127333333
+  n_runs: 27
+  name: C-stairs-2_to_LC-022
+  source: 74
+  stdev: 0.09036370570045764
+  target: 39
+  variance: 0.00816559930791892
+- max_n_obstacles: 0
+  mean: 3.197930626
+  n_runs: 1
+  name: C-stairs-2_to_LC-023
+  source: 74
+  stdev: 0.0
+  target: 56
+  variance: 0.0
+- max_n_obstacles: 0
+  mean: 3.142602644
+  n_runs: 1
+  name: LC-023_to_INT-C003
+  source: 56
+  stdev: 0.0
+  target: 152
+  variance: 0.0
+- connection_lane: true
+  source: 56
+  target: 39
+- max_n_obstacles: 0
+  mean: 1.8245436753209878
+  n_runs: 162
+  name: C020_to_LC-001<->LC-001_to_C020
+  source: 100
+  stdev: 1.8118811824159935
+  target: 104
+  variance: 3.2829134191931786
+- max_n_obstacles: 0
+  mean: 7.20825427375
+  n_runs: 4
+  name: INT-C004_to_C066
+  source: 109
+  stdev: 0.7167478520020546
+  target: 57
+  variance: 0.5137274833495592
+- max_n_obstacles: 0
+  mean: 2.1455346123647057
+  n_runs: 85
+  name: LC-034_to_INT-C004
+  source: 109
+  stdev: 0.10403139260714436
+  target: 156
+  variance: 0.010822530647781811
+- max_n_obstacles: 0
+  mean: 2.235544084072289
+  n_runs: 83
+  name: LC-035_to_INT-C004
+  source: 109
+  stdev: 0.08886668960255596
+  target: 112
+  variance: 0.007897288520917027
+- max_n_obstacles: 0
+  mean: 4.233855168333333
+  n_runs: 3
+  name: LC-022_to_INT-C003
+  source: 152
+  stdev: 0.023283131387805515
+  target: 39
+  variance: 0.0005421042072218144
+- max_n_obstacles: 0
+  mean: 3.3230134303516485
+  n_runs: 91
+  name: C064_to_LC-034
+  source: 156
+  stdev: 0.06381148750582687
+  target: 134
+  variance: 0.004071905937706299
+- connection_lane: true
+  source: 156
+  target: 112
+multigraph: false
+nodes:
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 70
+  pose:
+  - -51.5713
+  - -15.65408
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 46
+  pose:
+  - -26.4823
+  - -40.71242
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 110
+  pose:
+  - -38.92048
+  - -43.96327
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 94
+  pose:
+  - -18.27401
+  - -30.02443
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 14
+  pose:
+  - -21.97387
+  - -33.53688
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 53
+  pose:
+  - -30.37436
+  - 2.789153
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 19
+  pose:
+  - -11.23286
+  - -3.470534
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 124
+  pose:
+  - -5.337179
+  - -7.482509
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 37
+  pose:
+  - -20.99628
+  - -34.11314
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 158
+  pose:
+  - -17.84285
+  - -27.08498
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 28
+  pose:
+  - -44.85293
+  - -6.737554
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 96
+  pose:
+  - -50.86114
+  - -16.08586
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 133
+  pose:
+  - -14.14907
+  - -23.93194
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 123
+  pose:
+  - -54.36573
+  - -21.44891
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 129
+  pose:
+  - -33.42667
+  - 2.796368
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 118
+  pose:
+  - -7.707607
+  - -13.61179
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 49
+  pose:
+  - -41.12271
+  - 0.8242311
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 150
+  pose:
+  - -44.44851
+  - -4.276455
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 21
+  pose:
+  - -47.65579
+  - -9.311078
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 17
+  pose:
+  - -28.08515
+  - -44.90273
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 55
+  pose:
+  - -2.246455
+  - -3.683619
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 24
+  pose:
+  - -43.55342
+  - -4.874435
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 62
+  pose:
+  - -3.2034
+  - -5.715645
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 2
+  pose:
+  - -45.56015
+  - -6.240571
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 51
+  pose:
+  - -31.5
+  - -49
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 161
+  pose:
+  - -42.71361
+  - -43.10459
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 119
+  pose:
+  - -46.83686
+  - -9.806322
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 135
+  pose:
+  - -35.74035
+  - 5.100667
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 40
+  pose:
+  - -12.13564
+  - -17.9361
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 76
+  pose:
+  - -24.43369
+  - -39.15257
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 13
+  pose:
+  - -49.64507
+  - -39.13829
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 92
+  pose:
+  - -57.6
+  - -26.54627
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 65
+  pose:
+  - -55.13196
+  - -20.98258
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 58
+  pose:
+  - -58.51849
+  - -25.99691
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 64
+  pose:
+  - -25.35001
+  - -38.55004
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 74
+  pose:
+  - -53.43081
+  - -34.46329
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 26
+  pose:
+  - -16.8584
+  - -27.74149
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 56
+  pose:
+  - -56.23315
+  - -31.42005
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 100
+  pose:
+  - -1.066014
+  - -4.318292
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 109
+  pose:
+  - -37.5
+  - 5
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 152
+  pose:
+  - -60
+  - -30
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 156
+  pose:
+  - -38.33049
+  - 3.120504
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 104
+  pose:
+  - -0.71
+  - -2.33
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 48
+  pose:
+  - -32.70383
+  - 4.05767
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 139
+  pose:
+  - -8.870706
+  - -12.87811
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 137
+  pose:
+  - -15.17257
+  - -23.29826
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 47
+  pose:
+  - -6.012552
+  - -4.283758
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 132
+  pose:
+  - -25.7179
+  - -41.19298
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 33
+  pose:
+  - -11.07922
+  - -18.64927
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 42
+  pose:
+  - -35.28431
+  - -46.9525
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 39
+  pose:
+  - -56.9249
+  - -32.8372
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 44
+  pose:
+  - -28.91752
+  - -44.34554
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 57
+  pose:
+  - -36.03668
+  - 3.839637
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 84
+  pose:
+  - -4.329483
+  - -8.017118
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 112
+  pose:
+  - -39.2477
+  - 3.602728
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 36
+  pose:
+  - -19.17335
+  - -29.46444
+  - 0
+- actions:
+    delivery:
+      mean: 2.0
+    pickup:
+      mean: 5.0
+  id: 134
+  pose:
+  - -40.18932
+  - 0.2280047
+  - 0
